@@ -25,7 +25,7 @@ jobs:
         run: npm run build
 
       - name: Zip dist
-        run: zip -r dist.zip dist
+        run: zip -r dist.zip dist/
 
       - name: Create Release Draft
         uses: softprops/action-gh-release@v2
