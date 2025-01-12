@@ -24,10 +24,13 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Zip dist
+        run: zip -r dist.zip dist
+
       - name: Create Release Draft
         uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: dist/*
+          files: dist.zip
           draft: true
