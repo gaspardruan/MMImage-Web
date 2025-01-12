@@ -4,4 +4,34 @@ This is the web version of the MMImage project. The project is a web application
 
 ## Get Started
 
-###
+### Solution 1: Use Netlify
+
+**You must have a domain.** The image sources are accessed using http, but Netlify automatically uses https. So you need to use your domain so that the http can be used.
+
+1. Fork this project to your GitHub account.
+2. Go to [Netlify](https://www.netlify.com) and sign up.
+3. Click "New site from Git" and select the forked project.
+
+or
+
+1. Download the release [dist.zip](https://github.com/gaspardruan/MMImage-Web/releases)
+2. Go to [Netlify](https://www.netlify.com) and sign up.
+3. Use the "Netlify Drop" to drag and drop the unzipped folder ""dist"".
+
+Then you need to custom the domain using the domain you have. And use http to access the website. For example, if your domain is `example.com`, you can access the website using `http://example.com`.
+
+### Solution 2: Use Private Server
+
+1. Ensure you have Docker installed.
+2. Run the following command to start the server:
+
+```bash
+git clone https://github.com/gaspardruan/MMImage-Web.git
+cd MMImage-Web
+docker build -t mmimage .
+docker run -d --name mmimage-web -p 1314:80 mmimage
+```
+
+You can custom the port 1314 as you like. Then you can access the website using `http://your-server-ip:1314`.
+
+**Notice: Ensure the 1314 port is exposed on your server.**
