@@ -1,16 +1,8 @@
-import { useState } from "react";
 import { Button } from "@blueprintjs/core";
 import { useNavigate } from "react-router-dom";
 
 function App() {
   const nav = useNavigate();
-  const [count, setCount] = useState(0);
-
-  const onClick = (to: string) => {
-    setCount(count + 1);
-    setTimeout(() => setCount(0), 300);
-    if (count === 2) nav(to);
-  };
 
   return (
     <div className="w-full h-full flex items-center justify-center bg-slate-800">
@@ -19,7 +11,7 @@ function App() {
           large
           intent="primary"
           className="m-4 rounded-md"
-          onClick={() => onClick("/latest")}
+          onClick={() => nav("/latest")}
         >
           Images
         </Button>
@@ -27,7 +19,7 @@ function App() {
           large
           intent="primary"
           className="m-4 rounded-md"
-          onClick={() => onClick("/beauty")}
+          onClick={() => nav("/beauty")}
         >
           Beauties
         </Button>
