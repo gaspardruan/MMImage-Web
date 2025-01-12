@@ -25,10 +25,9 @@ jobs:
         run: npm run build
 
       - name: Create Release Draft
-        id: create_release
         uses: softprops/action-gh-release@v2
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: ./dist/*
+          files: dist/*
           draft: true
