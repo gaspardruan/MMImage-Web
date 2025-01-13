@@ -1,4 +1,8 @@
+[**中文**](https://github.com/gaspardruan/MMImage-Web) | [**English**](https://github.com/gaspardruan/MMImage-Web/blob/main/README-EN.md)
+
 # MMImage Web Version
+
+![mmimage-web](https://github.com/user-attachments/assets/f345e115-5fca-4ebd-b883-f8eb91407dbc)
 
 This is the web version of the [MMImage](https://github.com/gaspardruan/MMImage) project. The project is a web application that allows users to view beauty images. It's a normal vite project and can be built and deployed on Netlify, Vercel or your private server. In China, [Netlify](https://www.netlify.com) is recommended in 2025.
 

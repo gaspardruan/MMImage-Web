@@ -2,6 +2,9 @@
 
 # MMImage 网页版
 
+![mmimage-web](https://github.com/user-attachments/assets/f345e115-5fca-4ebd-b883-f8eb91407dbc)
+
+
 这是 [MMImage](https://github.com/gaspardruan/MMImage) 的网页版。这是一个用来看 MM 图片的小工具，和一般的 vite 项目一样，可以在 Netlify、Vercel 或私有服务器（如腾讯云和阿里云）上部署。在中国，推荐使用 [Netlify](https://www.netlify.com)。
 
 ## 开始
