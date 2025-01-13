@@ -56,3 +56,7 @@ export const hash = (str: string, seed = 0) => {
   const res = 4294967296 * (2097151 & h2) + (h1 >>> 0);
   return res.toString().padStart(16, "0");
 };
+
+export function getId(suit: ImageSuit) {
+  return `${suit.prefix}-${suit.id}`;
+}

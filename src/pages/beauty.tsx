@@ -1,13 +1,12 @@
-import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Divider } from "@blueprintjs/core";
-import { BeautyContext } from "../context";
+import { useImageState } from "../store";
 import { hash } from "../utils";
 
 const Beauty = () => {
-  const beauties = useContext(BeautyContext);
-  const nameMap = beauties.names;
-  const images = beauties.images;
+  const { beauty } = useImageState();
+  const nameMap = beauty.names;
+  const images = beauty.images;
 
   return (
     <div className="p-4">
