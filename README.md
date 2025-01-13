@@ -31,7 +31,7 @@
 2. 运行以下命令启动服务器：
 
 ```bash
-git clone
+git clone https://github.com/gaspardruan/MMImage-Web.git
 cd MMImage-Web
 docker build -t mmimage .
 docker run -d --name mmimage-web -p 1314:80 mmimage
