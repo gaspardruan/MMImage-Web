@@ -1,11 +1,13 @@
 # Make the vite + nginx a docker iamge
-# Usage: docker build -t vite-nginx .
-# Usage: docker run -d -p 8080:80 --name vite-nginx vite-nginx
+# docker build -t mmimage .
+# docker run -d --name mmimage-web -p 1314:80 mmimage
 
 # Step 1: Build the Vite app
 FROM node:22-alpine As builder
 WORKDIR /app
 COPY . .
+# If you are in China, you can use the following command to speed up the download
+# RUN npm config set registry https://mirrors.cloud.tencent.com/npm/
 RUN npm install
 RUN npm run build
 
