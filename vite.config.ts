@@ -18,5 +18,5 @@ export default defineConfig({
   build: {
     target: "esnext",
   },
-  base: "/mmimage-web/",
+  base: "/MMImage-Web/",
 });
