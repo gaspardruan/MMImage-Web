@@ -6,6 +6,10 @@
 
 This is the web version of the [MMImage](https://github.com/gaspardruan/MMImage) project. The project is a web application that allows users to view beauty images. It's a normal vite project and can be built and deployed on Netlify, Vercel or your private server. In China, [Netlify](https://www.netlify.com) is recommended in 2025.
 
+## Demo
+
+See [MMImage-Web](http://mmimage.xyz/).
+
 ## Get Started
 
 ### Solution 1: Use Netlify
