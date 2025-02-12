@@ -4,7 +4,6 @@
 
 ![mmimage-web](https://github.com/user-attachments/assets/f345e115-5fca-4ebd-b883-f8eb91407dbc)
 
-
 这是 [MMImage](https://github.com/gaspardruan/MMImage) 的网页版。这是一个用来看 MM 图片的小工具，和一般的 vite 项目一样，可以在 Netlify、Vercel 或私有服务器（如腾讯云和阿里云）上部署。在中国，推荐使用 [Netlify](https://www.netlify.com)。
 
 ## 开始
@@ -46,3 +45,5 @@ docker run -d --name mmimage-web -p 1314:80 mmimage
 - 我使用 Gist（它是免费的）存储图片 URL。第一次加载网站根据你的位置不同，大约需要 10s-5min。之后就很快了。
 
 - 本应用没有返回的按钮，你可以使用浏览器的返回按钮或者手机的返回手势（一般是从屏幕左侧向右扫）。
+
+- 可以看看[桌面版](https://github.com/gaspardruan/MMImage)和[手机版](https://github.com/gaspardruan/MMImage-Mobile).

@@ -45,3 +45,5 @@ You can custom the port 1314 as you like. Then you can access the website using 
 - I use Gist(it's free) to store the image urls. It will take about 10s-5m to load the images for the first time. Then it will be faster.
 
 - The app doesn't have back buttons. You can use the browser's back button or the phone's back gesture (usually swipe from the left side of the screen to the right).
+
+- Take a look at [Desktop Version](https://github.com/gaspardruan/MMImage) and [Mobile Version](https://github.com/gaspardruan/MMImage-Mobile).
